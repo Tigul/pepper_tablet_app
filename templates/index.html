@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+{% block scripts %}
+<script src={{ url_for('static', filename='js/scripts.js') }}></script>
+{% endblock %}
+
+{% block content %}
+<div class="grid-container">
+  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }} onclick="sendReq(this)" value="cereal" height="100%" width="100%"/></div>
+  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/shampoo.jpg') }} onclick="sendReq(this)" value="shampoo" height="100%" width="100%"/></div>
+  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/soap.jpg') }} onclick="sendReq(this)" value="soap" height="100%" width="100%"/></div>
+  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/makeup.jpg') }} onclick="sendReq(this)" value="makeup" height="100%" width="100%"/></div>
+  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }} onclick="sendReq(this)" value="cereal"  height="100%" width="100%"/></div>
+  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/shampoo.jpg') }} onclick="sendReq(this)" value="shampoo" height="100%" width="100%"/></div>
+  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }} onclick="sendReq(this)" value="cereal"  height="100%" width="100%"/></div>
+  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/shampoo.jpg') }} onclick="sendReq(this)" value="shampoo" height="100%" width="100%"/></div>
+  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }} onclick="sendReq(this)" value="cereal" height="100%" width="100%"/></div>
+
+</div>
+{% endblock %}
