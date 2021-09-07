@@ -7,10 +7,10 @@ app = Flask(__name__)
 #pub = rospy.Publisher('/assistant', String, queue_size=10)
 
 @app.route("/")
-def hello_world():
+def start():
     return render_template("index.html")
 
 @app.route("/<product>", methods=['GET', 'POST'])
-def send_cereal(product):
+def send_product(product):
     pub.publish(String(product))
     return render_template("index.html")
