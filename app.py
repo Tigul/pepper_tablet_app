@@ -13,4 +13,4 @@ def start():
 @app.route("/<product>", methods=['GET', 'POST'])
 def send_product(product):
     pub.publish(String(product))
-    return render_template("index2.html")
+    return render_template("index.html")
