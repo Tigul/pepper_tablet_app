@@ -1,20 +1,21 @@
 <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+<!--
 {% block scripts %}
 <script src={{ url_for('static', filename='js/scripts.js') }}></script>
-{% endblock %}
+{% endblock %}-->
 
 {% block content %}
 <div class="grid-container">
-  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/toothbrush.jpg') }} onclick="sendReq(this)" value="toothbrush" height="100%" width="100%"/></div>
-  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/baby_food.jpg') }} onclick="sendReq(this)" value="baby_food" height="100%" width="100%"/></div>
-  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/tissue_box.jpg') }} onclick="sendReq(this)" value="tissue" height="100%" width="100%"/></div>
+  <div class="grid-item"><form action="/toothbrush" method="post">  <input  type="image" src={{ url_for('static', filename='images/toothbrush.jpg') }} height="100%" width="100%"/></form></div>
+  <div class="grid-item"><form action="/baby_food" method="post">  <input  type="image" src={{ url_for('static', filename='images/baby_food.jpg') }}  height="100%" width="100%"/></form></div>
+  <div class="grid-item"><form action="/tissue" method="post">  <input  type="image" src={{ url_for('static', filename='images/tissue_box.jpg') }} height="100%" width="100%"/></form></div>
   <!--
-  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/makeup.jpg') }} onclick="sendReq(this)" value="makeup" height="100%" width="100%"/></div>
-  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }} onclick="sendReq(this)" value="cereal"  height="100%" width="100%"/></div>
-  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/shampoo.jpg') }} onclick="sendReq(this)" value="shampoo" height="100%" width="100%"/></div>
-  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }} onclick="sendReq(this)" value="cereal"  height="100%" width="100%"/></div>
-  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/shampoo.jpg') }} onclick="sendReq(this)" value="shampoo" height="100%" width="100%"/></div>
-  <div class="grid-item">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }} onclick="sendReq(this)" value="cereal" height="100%" width="100%"/></div>
-  -->
+  <div class="grid-item"><form action="/shampoo" method="post">  <input  type="image" src={{ url_for('static', filename='images/shampoo.jpg') }}  height="100%" width="100%"/></form></div>
+  <div class="grid-item"><form action="/cereal" method="post">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }} height="100%" width="100%"/></form></div>
+  <div class="grid-item"><form action="/cereal" method="post">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }} height="100%" width="100%"/></form></div>
+  <div class="grid-item"><form action="/cereal" method="post">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }}  height="100%" width="100%"/></form></div>
+  <div class="grid-item"><form action="/cereal" method="post">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }}  height="100%" width="100%"/></form></div>
+-->
+
 </div>
 {% endblock %}
