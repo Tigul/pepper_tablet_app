@@ -6,16 +6,49 @@
 
 {% block content %}
 <div class="grid-container">
-  <div class="grid-item"><form action="/toothbrush" method="post">  <input  type="image" src={{ url_for('static', filename='images/toothbrush.jpg') }} height="100%" width="100%"/></form></div>
-  <div class="grid-item"><form action="/baby_food" method="post">  <input  type="image" src={{ url_for('static', filename='images/baby_food.jpg') }}  height="100%" width="100%"/></form></div>
-  <div class="grid-item"><form action="/tissue" method="post">  <input  type="image" src={{ url_for('static', filename='images/tissue_box.jpg') }} height="100%" width="100%"/></form></div>
-  <!--
-  <div class="grid-item"><form action="/shampoo" method="post">  <input  type="image" src={{ url_for('static', filename='images/shampoo.jpg') }}  height="100%" width="100%"/></form></div>
-  <div class="grid-item"><form action="/cereal" method="post">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }} height="100%" width="100%"/></form></div>
-  <div class="grid-item"><form action="/cereal" method="post">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }} height="100%" width="100%"/></form></div>
-  <div class="grid-item"><form action="/cereal" method="post">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }}  height="100%" width="100%"/></form></div>
-  <div class="grid-item"><form action="/cereal" method="post">  <input  type="image" src={{ url_for('static', filename='images/cereal.jpg') }}  height="100%" width="100%"/></form></div>
--->
+  <a class="image" href="#popup1">
+    <div class="grid-item"><input  type="image" src={{ url_for('static', filename='images/toothbrush.jpg') }} height="100%" width="100%"/></div>
+  </a>
+  <a class="image" href="#popup1">
+    <div class="grid-item"><input  type="image" src={{ url_for('static', filename='images/baby_food.jpg') }}  height="100%" width="100%"/></div>
+  </a>
+  <a class="image" href="#popup1">
+    <div class="grid-item"><input  type="image" src={{ url_for('static', filename='images/tissue_box.jpg') }} height="100%" width="100%"/></div>
+  </a>
+  <div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Additional Options</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+      <form action="/tissue" method="POST">
+
+        <label for="cars">Choose a Price:</label>
+        <select id="price" name="price">
+            <option value="anything">Anything</option>
+            <option value="cheapest">Cheapest</option>
+            <option value="highest">highest</option>
+        </select>
+        <br>
+        <label for="ingredients">Choose exclued Ingredients:</label>
+        <select id="ingredients" name="ingredients">
+            <option value="nothing">Nothing</option>
+            <option value="meat">Meat</option>
+            <option value="sugar">Sugar</option>
+            <option value="Peanuts">Peanutst</option>
+        </select>
+        <br>
+        <label for="production">Choose Production Method:</label>
+        <select id="production" name="production">
+            <option value="nothing">Nothing</option>
+            <option value="bio">Bio</option>
+            <option value="organic">Organnic</option>
+        </select>
+        <br>
+        <input type="button" value="Submit"/>
+      </form>
+		</div>
+	</div>
+</div>
 
 </div>
 {% endblock %}

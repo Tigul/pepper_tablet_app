@@ -5,5 +5,6 @@ Links to the images:
 tissue_box.jpg: https://commons.wikimedia.org/wiki/File:A_tissue_box.jpg
 baby_food.jpg: https://commons.wikimedia.org/wiki/File:Beech_Nut_Sweet_Pea_and_Sweet_Potato_Jarred_Baby_Food.JPG
 toothbrush.jpg: https://commons.wikimedia.org/wiki/File:Toothbrush_BNC.jpg
+toothpaste.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Stripes_%2827542155522%29.jpg/512px-Stripes_%2827542155522%29.jpg
 
 No changes to the images were made.
