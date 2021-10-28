@@ -21,7 +21,7 @@
               <form action="/toothpaste" method="POST" id="toothpaste">
                 <li><image src={{ url_for('static', filename='images/toothpaste.jpg') }}/></li>
                 <li><a href="#"><label for="price">Price</label><select id="price" name="price" form="toothpaste"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select></a></li>
-                <li><a href="#"><label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="toothpaste"><option value="plant">Plant Based</option><option value="sls">SLS Free</option></select> </a> </li>
+                <li><a href="#"><label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="toothpaste"><option value="Plant_extract">Plant Based</option><option value="sls">SLS Free</option></select> </a> </li>
                 <li><a href="#"><input type="submit" value="Submit"/></a></li>
               </form>
 
@@ -56,6 +56,43 @@
 
 
         </ul>
+      </li>
+
+      <li>
+        <input id="group-2" type="checkbox" hidden />
+        <label for="group-2"><span class="fa fa-angle-right"></span>Groceries</label>
+        <ul class="group-list">
+          <li>
+            <input id="sub-group-4" type="checkbox" hidden />
+            <label for="sub-group-4"><span class="fa fa-angle-right"></span>Baby Food</label>
+            <ul class="sub-group-list">
+              <form action="/baby_food" method="POST" id="baby_food">
+                <li><image src={{ url_for('static', filename='images/baby_food.jpg') }}/></li>
+                <li><a href="#"><label for="price">Price</label><select id="price" name="price" form="baby_food"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select></a></li>
+                <li><a href="#"><label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="baby_food"><option value="Plant_extract">Plant Based</option><option value="sls">SLS Free</option></select> </a> </li>
+                <li><a href="#"><input type="submit" value="Submit"/></a></li>
+              </form>
+
+            </ul>
+          </li>
+
+          <li>
+            <input id="sub-group-5" type="checkbox" hidden />
+            <label for="sub-group-5"><span class="fa fa-angle-right"></span>Juice</label>
+            <ul class="sub-group-list">
+              <form action="/juice" method="POST" id="juice">
+                <li><image src={{ url_for('static', filename='images/juice.jpg') }}/></li>
+                <li><a href="#"><label for="price">Price</label><select id="price" name="price" form="juice"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select></a></li>
+                <li><a href="#"><label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="juice"><option value="plant">Plant Based</option><option value="sls">SLS Free</option></select> </a> </li>
+                <li><a href="#"><input type="submit" value="Submit"/></a></li>
+              </form>
+
+            </ul>
+          </li>
+
+
+        </ul>
+
       </li>
       <!--
       <li>
