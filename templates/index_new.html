@@ -33,6 +33,7 @@
             <label for="sub-group-2"><span class="fa fa-angle-right"></span>Toothbrush</label>
             <ul class="sub-group-list">
               <form action="/toothbrush" method="POST" id="toothbrush">
+                <li><image src={{ url_for('static', filename='images/toothbrush.jpg') }}/></li>
                 <li><a href="#"><label for="price">Price</label><select id="price" name="price" form="toothbrush"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select></a></li>
                 <li><a href="#"><label for="production">Production</label><select id="production" name="production" form="toothbrush"><option value="plastic">No Plastic</option><option value="bambus">Bambus</option></select></a></li>
                 <li><a href="#"><input type="submit" value="Submit"/></a></li>
@@ -40,19 +41,6 @@
 
             </ul>
           </li>
-
-          <li>
-            <input id="sub-group-3" type="checkbox" hidden />
-            <label for="sub-group-3"><span class="fa fa-angle-right"></span>Floss</label>
-            <ul class="sub-group-list">
-              <li><a href="#">option</a></li>
-              <li><a href="#">option</a></li>
-              <li><a href="#">option</a></li>
-
-            </ul>
-          </li>
-
-
 
 
         </ul>
