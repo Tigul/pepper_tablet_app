@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+<!--
+{% block scripts %}
+<script src={{ url_for('static', filename='js/scripts.js') }}></script>
+{% endblock %}-->
+
+{% block content %}
+<a href="/">
+<img src="{{url_for('static', filename='images/vis.jpg')}}" height="100%" width="100%" />
+</a>
+{% endblock %}
+

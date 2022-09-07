@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/style_grid.css')}}">
+{% block content %}
+<h1>Pepper Shopping Assistant</h1>
+
+
+<a href="#popup1">
+  <image src={{ url_for('static', filename='images/toothpaste.jpg')}} width="33%" height="33%"/>
+</a>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Toothpaste</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+      <form action="/toothpaste" method="Post" id="toothpaste">
+        <label for="price">Price</label><select id="price" name="price" form="toothpaste"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select>
+        <label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="toothpaste"><option value="plant">Plant Based</option><option value="sls">SLS Free</option>
+        <input type="submit" value="submit"/>
+      </form>
+
+		</div>
+	</div>
+</div>
+
+
+<a href="#popup2">
+  <image src={{ url_for('static', filename='images/toothbrush.jpg')}} width="33%" height="33%"/>
+</a>
+
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<h2>Toothbrush</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+      <form action="/toothbrush" method="Post" id="toothbrush">
+        <label for="price">Price</label><select id="price" name="price" form="toothbrush"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select>
+        <label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="toothbrush"><option value="plant">Plant Based</option><option value="sls">SLS Free</option>
+        <input type="submit" value="submit"/>
+      </form>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+<a href="#popup3">
+  <image src={{ url_for('static', filename='images/juice.jpg')}} width="33%" height="33%"/>
+</a>
+
+<div id="popup3" class="overlay">
+	<div class="popup">
+		<h2>Juice</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+      <form action="/juice" method="Post" id="juice">
+        <label for="price">Price</label><select id="price" name="price" form="juice"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select>
+        <label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="juice"><option value="plant">Plant Based</option><option value="sls">SLS Free</option>
+        <input type="submit" value="submit"/>
+      </form>
+
+		</div>
+	</div>
+</div>
+{% endblock %}
