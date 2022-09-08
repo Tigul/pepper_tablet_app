@@ -4,9 +4,9 @@ from pepper_behaviour_srvs.srv import Visualize
 import rospy
 
 app = Flask(__name__)
-#node = rospy.init_node('pepper_app')
-#pub = rospy.Publisher('/assistant', String, queue_size=10)
-#vis_service = rospy.ServiceProxy('/visualize_shelf', Visualize)
+node = rospy.init_node('pepper_app')
+pub = rospy.Publisher('/assistant', String, queue_size=10)
+vis_service = rospy.ServiceProxy('/visualize_shelf', Visualize)
 
 @app.route("/")
 def start():
@@ -19,6 +19,6 @@ def send_product(product):
     #print(req)
     msg = str(req).replace("'", '"')
     print(msg)
-    pub.publish(String(msg))
-    vis_service(String(msg))
+    #pub.publish(String(msg))
+    vis_service(msg)
     return render_template("vis_img.html")
