@@ -5,7 +5,14 @@
 {% endblock %}-->
 
 {% block content %}
-<a href="/" height="100%" width="100%" style="height:100%: width:100%;" >
-<img src="{{url_for('static', filename='images/vis.jpg')}}?{{ range(1, 51) | random }}" height="100%" width="100%" style="height:100%: width:100%;"/>
+<a href="/" >
+  <div class="row">
+    <div class="column">
+    <img src="{{url_for('static', filename='images/vis_room.jpg')}}?{{ range(1, 200) | random }}" height="100%" width="50%"/>
+    </div>
+  <div class="column">
+<img src="{{url_for('static', filename='images/vis.jpg')}}?{{ range(1, 200) | random }}" height="100%" width="50%" />
+</div>
+
 </a>
 {% endblock %}

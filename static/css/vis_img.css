@@ -4,3 +4,16 @@ img{
   height:100%;
   object-fit: cover;
 }
+
+.column {
+  float: left;
+  width: 48%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -19,6 +19,6 @@ def send_product(product):
     #print(req)
     msg = str(req).replace("'", '"')
     print(msg)
-    #pub.publish(String(msg))
+    pub.publish(String(msg))
     vis_service(msg)
     return render_template("vis_img.html")
