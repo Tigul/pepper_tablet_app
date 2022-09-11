@@ -15,6 +15,12 @@ def start():
 @app.route("/<product>", methods=['POST'])
 def send_product(product):
     req = dict(request.form)
+    del_keys = []
+    for k in req.keys():
+        if req[k] == '':
+            del_keys.append(k)
+    for k in del_keys:
+        del req[k]
     req['product'] = product
     #print(req)
     msg = str(req).replace("'", '"')

@@ -7,5 +7,11 @@ baby_food.jpg: https://commons.wikimedia.org/wiki/File:Beech_Nut_Sweet_Pea_and_S
 toothbrush.jpg: https://commons.wikimedia.org/wiki/File:Toothbrush_BNC.jpg
 toothpaste.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Stripes_%2827542155522%29.jpg/512px-Stripes_%2827542155522%29.jpg
 juice.jp: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Orange_juice_1.jpg/512px-Orange_juice_1.jpg
+deo.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/20-06-18-Deodorants_RRK6884.jpg/512px-20-06-18-Deodorants_RRK6884.jpg
+detergent.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/3_Sorten_waschpulver.jpg/512px-3_Sorten_waschpulver.jpg
+shampoo.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Head_%26_Shoulders_shampoo_bottle.jpg/512px-Head_%26_Shoulders_shampoo_bottle.jpg
+medication.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/VariousPills.jpg/512px-VariousPills.jpg
+
+
 
 No changes to the images were made.

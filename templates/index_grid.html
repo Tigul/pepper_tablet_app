@@ -2,10 +2,55 @@
 {% block content %}
 <h1>Pepper Shopping Assistant</h1>
 
+<div class="row">
 
+  <div class="column">
 <a href="#popup1">
-  <image src={{ url_for('static', filename='images/toothpaste.jpg')}} width="33%" height="33%"/>
+  <image src={{ url_for('static', filename='images/toothpaste.jpg')}} style="width:100%" />
+  </a>
+
+  <a href="#popup2">
+  <image src={{ url_for('static', filename='images/baby_food.jpg')}} style="width:100%" />
+    </a>
+
+  <a href="#popup3">
+  <image src={{ url_for('static', filename='images/deo.jpg')}} style="width:100%" />
+    </a>
+
+</div>
+
+<div class="column">
+<a href="#popup4">
+  <image src={{ url_for('static', filename='images/toothbrush.jpg')}} style="width:100%"/>
+  </a>
+
+  <a href="#popup5">
+  <image src={{ url_for('static', filename='images/detergent.jpg')}} style="width:100%" />
+  </a>
+
+  <a href="#popup6">
+  <image src={{ url_for('static', filename='images/medication.jpg')}} style="width:100%" />
+  </a>
+
+  <a href="#popup7">
+  <image src={{ url_for('static', filename='images/tissue_box.jpg')}} style="width:100%" />
 </a>
+</div>
+
+
+<div class="column">
+<a href="#popup8">
+  <image src={{ url_for('static', filename='images/juice.jpg')}} style="width:100%"/>
+  </a>
+
+  <a href="#popup9">
+  <image src={{ url_for('static', filename='images/shampoo.jpg')}} style="width:100%" />
+</a>
+</div>
+
+</div>
+
+
 
 <div id="popup1" class="overlay">
 	<div class="popup">
@@ -14,8 +59,8 @@
 		<div class="content">
 
       <form action="/toothpaste" method="Post" id="toothpaste">
-        <label for="price">Price</label><select id="price" name="price" form="toothpaste"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select>
-        <label for="ingredients">Brand</label><select id="brand" name="brand" form="toothpaste"><option value="signal">Signal</option><option value="blend-a-med">Blend a Med</option>
+        <label for="price">Price</label><select id="price" name="price" form="toothpaste"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select><br/>
+        <label for="ingredients">Brand</label><select id="brand" name="brand" form="toothpaste"><option value="signal">Signal</option><option value="blend-a-med">Blend a Med</option></select><br/>
         <input type="submit" value="submit"/>
       </form>
 
@@ -24,19 +69,50 @@
 </div>
 
 
-<a href="#popup2">
-  <image src={{ url_for('static', filename='images/toothbrush.jpg')}} width="33%" height="33%"/>
-</a>
 
 <div id="popup2" class="overlay">
+	<div class="popup">
+		<h2>Baby Food</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+      <form action="/baby_food" method="Post" id="baby_food">
+        <label for="price">Price</label><select id="price" name="price" form="baby_food"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select><br/>
+        <label for="ingredients">Brand</label><select id="brand" name="brand" form="baby_food"><option value="hipp">Hipp</option><option value="">No Brand</option></select><br/>
+        <input type="submit" value="submit"/>
+      </form>
+
+		</div>
+	</div>
+</div>
+
+
+
+<div id="popup3" class="overlay">
+	<div class="popup">
+		<h2>Deo</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+      <form action="/deodorant" method="Post" id="deodorant">
+        <label for="price">Price</label><select id="price" name="price" form="deodorant"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select><br/>
+        <label for="brand">Brand</label><select id="brand" name="brand" form="deodorant"><option value="garnier">Garnier</option><option value="balea">Balea</option></select><br/>
+        <input type="submit" value="submit"/>
+      </form>
+
+		</div>
+	</div>
+</div>
+
+<div id="popup4" class="overlay">
 	<div class="popup">
 		<h2>Toothbrush</h2>
 		<a class="close" href="#">&times;</a>
 		<div class="content">
 
       <form action="/toothbrush" method="Post" id="toothbrush">
-        <label for="price">Price</label><select id="price" name="price" form="toothbrush"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select>
-        <label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="toothbrush"><option value="plant">Plant Based</option><option value="sls">SLS Free</option>
+        <label for="price">Price</label><select id="price" name="price" form="toothbrush"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select><br/>
+        <label for="brand">Brand</label><select id="brand" name="brand" form="toothbrush"><option value="colgate">Colgate</option><option value="sensodyne">Sensodyne</option></select><br/>
         <input type="submit" value="submit"/>
       </form>
 
@@ -46,24 +122,96 @@
 
 
 
+<div id="popup5" class="overlay">
+	<div class="popup">
+		<h2>Detergent</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
 
-<a href="#popup3">
-  <image src={{ url_for('static', filename='images/juice.jpg')}} width="33%" height="33%"/>
-</a>
+      <form action="/detergent" method="Post" id="detergent">
+        <label for="price">Price</label><select id="price" name="price" form="detergent"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select><br/>
+        <label for="label">Label</label><select id="label" name="label" form="detergent"><option value="Der_gruene_Punkt">Der Grüne Punkt</option></select><br/>
+        <input type="submit" value="submit"/>
+      </form>
 
-<div id="popup3" class="overlay">
+		</div>
+	</div>
+</div>
+
+
+
+<div id="popup6" class="overlay">
+	<div class="popup">
+		<h2>Medication</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+      <form action="/medication" method="Post" id="medication">
+        <label for="price">Price</label><select id="price" name="price" form="medication"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select><br/>
+        <label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="medication"><option value="Parfum">Parfum</option><option value="alcohol">Alcohol</option></select><br/>
+        <input type="submit" value="submit"/>
+      </form>
+
+		</div>
+	</div>
+</div>
+
+<div id="popup7" class="overlay">
+	<div class="popup">
+		<h2>Tissue Box</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+
+      <form action="/tissue" method="Post" id="tissue">
+        <label for="price">Price</label><select id="price" name="price" form="tissue"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select><br/>
+        <label for="label">Label</label><select id="label" name="label" form="tissue"><option value="Der_Blaue_Engel">Der Balue Engel</option><option value="">No Label</option></select><br/>
+        <input type="submit" value="submit"/>
+      </form>
+
+		</div>
+	</div>
+</div>
+
+
+
+<div id="popup8" class="overlay">
 	<div class="popup">
 		<h2>Juice</h2>
 		<a class="close" href="#">&times;</a>
 		<div class="content">
 
       <form action="/juice" method="Post" id="juice">
-        <label for="price">Price</label><select id="price" name="price" form="juice"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select>
-        <label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="juice"><option value="plant">Plant Based</option><option value="sls">SLS Free</option>
+        <label for="price">Price</label><select id="price" name="price" form="juice"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select><br/>
+        <label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="juice"><option value="apfelsaftkonzentrat">Apple juice concentrate</option><option value="wasser">Water</option></select><br/>
+          <input type="submit" value="submit"/>
+      </form>
+
+		</div>
+	</div>
+</div>
+
+
+
+<div id="popup9" class="overlay">
+	<div class="popup">
+		<h2>Shampoo</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+      <form action="/shampoo" method="Post" id="shampoo">
+        <label for="price">Price</label><select id="price" name="price" form="shampoo"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select><br/>
+        <label for="brand">Brand</label><select id="brand" name="brand" form="shampoo"><option value="buebchen">Bübchen</option><option value="">No Brand</option></select><br/>
+          <label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="shampoo"><option value="Parfum">Parfum</option><option value="sodium_chloride">Sodium Chloride</option></select><br/>
         <input type="submit" value="submit"/>
       </form>
 
 		</div>
 	</div>
 </div>
+
+
+
+
+
 {% endblock %}
