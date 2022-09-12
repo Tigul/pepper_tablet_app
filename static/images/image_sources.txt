@@ -11,7 +11,7 @@ deo.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/20-06-18-Deod
 detergent.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/3_Sorten_waschpulver.jpg/512px-3_Sorten_waschpulver.jpg
 shampoo.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Head_%26_Shoulders_shampoo_bottle.jpg/512px-Head_%26_Shoulders_shampoo_bottle.jpg
 medication.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/VariousPills.jpg/512px-VariousPills.jpg
-
+bodylotion.jpg: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nivea_Lotion.jpg/512px-Nivea_Lotion.jpg
 
 
 No changes to the images were made.
