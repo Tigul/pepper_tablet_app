@@ -17,6 +17,10 @@
   <image src={{ url_for('static', filename='images/deo.jpg')}} style="width:100%" />
     </a>
 
+    <a href="#popup10">
+    <image src={{ url_for('static', filename='images/bodylotion.jpg')}} style="width:100%" />
+      </a>
+
 </div>
 
 <div class="column">
@@ -210,6 +214,22 @@
 	</div>
 </div>
 
+
+<div id="popup10" class="overlay">
+	<div class="popup">
+		<h2>Shampoo</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+      <form action="/bodylotion" method="Post" id="bodylotion">
+        <label for="price">Price</label><select id="price" name="price" form="bodylotion"><option value="cheapest">Cheapest</option><option value="highest">highest</option></select><br/>
+        <label for="ingredients">Ingredients</label><select id="ingredients" name="ingredients" form="bodylotion"><option value="Parfum">Parfum</option><option value="caramel">Caramel</option></select><br/>
+        <input type="submit" value="submit"/>
+      </form>
+
+		</div>
+	</div>
+</div>
 
 
 
